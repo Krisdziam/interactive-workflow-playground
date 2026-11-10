@@ -1,0 +1,10 @@
+.next
+coverage
+node_modules
+package-lock.json
+assets/design-direction-storyboard-v1.png
+AGENTS.md
+README.md
+assets/**
+docs/**
+n8n/**

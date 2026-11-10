@@ -906,6 +906,13 @@ IP_RATE_LIMIT_WINDOW_SECONDS=3600
 
 Dev, preview і production не повинні випадково використовувати один і той самий Telegram chat або production Sheet без усвідомленого рішення.
 
+## 20.3. GitHub Pages mock preview
+
+- Завершений Phase 1 frontend може публікуватися як static export у GitHub Pages.
+- Цей preview працює лише на детермінованих browser-side mocks і не викликає Next.js API Route, n8n, LLM, Google Sheets або Telegram.
+- Preview явно зберігає mock-mode labeling і не вважається production deployment або доказом реальних integration side effects.
+- Production MVP усе ще потребує Next.js-сумісного server runtime; цільовий runtime залишається Vercel.
+
 ---
 
 # 21. Performance

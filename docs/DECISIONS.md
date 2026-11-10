@@ -20,6 +20,7 @@ This log records decisions approved before implementation. Update it whenever th
 | ADR-014 | Use platform/IP protection in addition to the session limit. | A new tab creates a new session, so a second layer is required to reduce abuse. Initial target: 20 requests per IP per hour, configurable. |
 | ADR-015 | Do not implement the application until explicitly authorized. | The planning package must be reviewed first. The current project root contains documentation only. |
 | ADR-016 | Use a landing-first, single-focus experience with progressive disclosure while retaining the approved personalization inputs. | The ready state emphasizes one dominant workflow CTA; after submit, the pre-run controls yield to a verified workflow replay; the final state emphasizes the Digital Twin avatar and text. The UI must show a neutral pending transition while the request is unresolved and must not imply live node telemetry. The approximate direction is documented in `DESIGN_DIRECTION.md`. |
+| ADR-017 | Publish the completed Phase 1 frontend as a static GitHub Pages mock preview. | Gives recruiters a public, interaction-complete preview before backend integration. The preview uses deterministic browser-side mocks, performs no external writes, and does not replace the future Vercel deployment required for the real Next.js API, n8n, LLM, Sheets, and Telegram workflow. |
 
 ## Change procedure
 

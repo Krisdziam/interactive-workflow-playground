@@ -9,9 +9,12 @@ The implementation is intentionally split into gated phases. Do not begin a late
 - [x] Technical specification v1.2 prepared.
 - [x] Project folder and implementation instructions prepared.
 - [x] Approximate UX and visual direction approved.
-- [ ] Application scaffold authorized.
+- [x] Application scaffold authorized.
+- [x] Phase 1 mock-first Next.js scaffold implemented and verified.
+- [x] Phase 1 static mock preview authorized for GitHub Pages.
+- [ ] Phase 2 API gateway authorized.
 
-No framework, dependencies, source code, external accounts, or deployments exist in this folder yet.
+The Phase 1 framework, dependencies, frontend source, and deterministic mocks now exist. A GitHub Pages workflow publishes that frontend as a mock-only static preview. The API gateway, n8n workflow, real integrations, and production deployment remain unimplemented.
 
 ## Phase 0 — prerequisites
 
@@ -35,6 +38,8 @@ No framework, dependencies, source code, external accounts, or deployments exist
 - Missing visual assets have an explicitly approved placeholder strategy.
 
 ## Phase 1 — mock-first Next.js scaffold
+
+**Status:** completed and verified on 2026-11-10.
 
 ### Work
 
@@ -64,6 +69,12 @@ No framework, dependencies, source code, external accounts, or deployments exist
 
 - The complete user experience works against deterministic local mocks.
 - No production credentials or external writes are needed.
+
+### Public mock preview
+
+- GitHub Pages publishes the same deterministic Phase 1 experience as a static export.
+- The preview is explicitly labeled as mock mode and cannot call production integrations.
+- This preview is separate from Phase 6 production deployment.
 
 ## Phase 2 — Next.js API gateway
 
